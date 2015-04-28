@@ -1,0 +1,90 @@
+@import "mixins";
+
+body {
+  font-family: 'Open Sans';
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+
+  h3 {
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+  }
+}
+
+.container {
+  margin: 1rem;
+}
+
+.badge {
+  color: #eee;
+  height: 100%;
+  @include value-vendor-prefixer(display, flex);
+  @include property-vendor-prefixer(justify-content, center);
+  @include property-vendor-prefixer(align-items, center);
+}
+
+#pages-list {
+  background: #333;
+  @include value-vendor-prefixer(background, linear-gradient(#333, #444, #333));
+  border-radius: 0.2rem;
+
+  @include value-vendor-prefixer(display, flex);
+  @include property-vendor-prefixer(justify-content, space-around);
+}
+
+#page-editor {
+  border: solid 1px Gray;
+  border-radius: 0.2rem;
+
+  height: 15rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  h2:first-child {
+    margin-top: 0;
+  }
+}
+
+.page {
+  color: white;
+  opacity: 0.4;
+
+  text-align: center;
+  padding: 0.2rem 0;
+
+  will-change: opacity;
+  @include transition(opacity, 500ms, ease-out);
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+
+  .add {
+    border-radius: 0.2rem;
+    cursor: pointer;
+
+    height: 5rem;
+    width: 5rem;
+    margin: 0.5rem 0.5rem 0;
+
+    &::after {
+      content: '+';
+      color: white;
+      font-size: 3.7rem;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ng-garfield",
+  "version": "1.0.0",
+  "description": "A demo project which demonstrates how to lazy load & inject AngularJS components",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt connect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nire0510/ng-garfield"
+  },
+  "keywords": [
+    "angularjs",
+    "lazy",
+    "loading",
+    "compilation"
+  ],
+  "author": "Nir Elbaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nire0510/ng-garfield/issues"
+  },
+  "homepage": "https://github.com/nire0510/ng-garfield",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.10.1"
+  }
+}

@@ -1,0 +1,57 @@
+$vendors: -webkit-, -moz-, -ms-, -o-, '';
+
+@mixin property-vendor-prefixer($property, $value) {
+  @each $vendor in $vendors {
+    #{$vendor}#{$property}: $value;
+  }
+}
+
+@mixin value-vendor-prefixer($property, $value) {
+  @each $vendor in $vendors {
+    #{$property}: #{$vendor}#{$value};
+  }
+}
+
+@mixin transition($property, $duration, $timing, $delay: 0s) {
+  @each $vendor in $vendors {
+    #{$vendor}transition: $property $duration $timing $delay;
+  }
+}
+
+@mixin animation($name, $duration, $timing, $delay, $iteration, $direction) {
+  @each $vendor in $vendors {
+    #{$vendor}animation: $name $duration $timing $delay $iteration $direction;
+  }
+}
+
+@mixin clearfix() {
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin triangle ($direction, $size, $color) {
+  $directions: (
+      bottom: top,
+      top: bottom,
+      left: right,
+      right: left
+  );
+
+  border: solid $size transparent;
+  border-#{map-get($directions, $direction)}-color: $color;
+  height: 0;
+  width: 0;
+}
+
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}

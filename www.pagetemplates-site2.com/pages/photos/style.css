@@ -1,0 +1,14 @@
+#gallery {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+  #gallery .photo {
+    margin: 0 10px;
+    height: 80px;
+    width: 80px; }
+  #gallery .label {
+    text-align: center;
+    margin-bottom: 20px; }

@@ -1,0 +1,9 @@
+<h2>Links Collection</h2>
+<div id="links">
+  <div data-ng-repeat="link in ctrlLinks.links">
+    <a data-ng-href="{{ link.url }}" data-ng-attr-title="{{ link.name }}" target="_blank">
+      <img class="icon" data-ng-src="{{ 'http://www.google.com/s2/favicons?domain=' + link.url }}" alt="{{ link.name }}"/>
+      <h6 data-ng-bind="link.name"></h6>
+    </a>
+  </div>
+</div>

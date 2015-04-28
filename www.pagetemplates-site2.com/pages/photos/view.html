@@ -1,0 +1,7 @@
+<h2>Photos Gallery</h2>
+<div id="gallery">
+  <div data-ng-repeat="photo in ctrlPhotos.photos">
+    <img class="photo" data-ng-src="{{ directiveFolder + '/' + photo.path }}" alt="{{ photo.name }}" />
+    <div class="label" data-ng-bind="photo.name"></div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ngGarfield :: Lazy Loading of AngularJS Components</title>
+  <meta name="description" content="Lazy Loading of AngularJS Components">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body data-ng-cloak>
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div data-ng-view></div>
+
+<!-- 3rd party files -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.16/require.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular-route.min.js"></script>
+
+<!-- Application files -->
+<script src="scripts/app.module.js"></script>
+<script src="scripts/common/services/garfield.service.js"></script>
+<script src="scripts/common/services/pages.service.js"></script>
+<script src="scripts/editor/controllers/editor.controller.js"></script>
+<script src="scripts/editor/directives/page.directive.js"></script>
+<script src="scripts/common/filters/camelize.filter.js"></script>
+
+</body>
+
+</html>

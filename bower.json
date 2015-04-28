@@ -1,0 +1,28 @@
+{
+  "name": "ng-garfield",
+  "version": "1.0.0",
+  "authors": [
+    "Nir Elbaz <nire0510@gmail.com>"
+  ],
+  "description": "A demo project which demonstrates how to lazy load & inject AngularJS components",
+  "main": "/wwww.main-site/scripts/app.module.js",
+  "keywords": [
+    "angular",
+    "javascript",
+    "requirejs",
+    "amd",
+    "lazyload"
+  ],
+  "license": "MIT",
+  "homepage": "nirelbaz.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www.main-site.com/bower_components"
+  ],
+  "dependencies": {
+    "require-css": "~0.1.8",
+    "requirejs-text": "~2.0.14"
+  }
+}

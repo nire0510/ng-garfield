@@ -1,0 +1,11 @@
+<header><h3>ngMacgyver</h3></header>
+<div class="container">
+  <h1>Pages Editor</h1>
+  <p>Click on a page to open it in editor:</p>
+  <div id="pages-list">
+    <page data-ng-repeat="page in editorCtrl.pages" data-page="page" data-ng-class="{active: page.directive === editorCtrl.activeDirective}" data-ng-click="editorCtrl.selectPage(page)"></page>
+  </div>
+  <div id="page-editor">
+    <h1 class="badge">Editor</h1>
+  </div>
+</div>
